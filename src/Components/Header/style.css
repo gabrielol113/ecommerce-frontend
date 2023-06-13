@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;       
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #FFF;  
+    font-size: 30px;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.login{
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #FFF;
+    color: rgb(0, 0, 0);
+    padding: 5px 14px;
+    border-radius: 4px;
+}
+
+.login:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #FFF;
+}
+
+.navBtn{
+    width: 40px;
+    cursor: pointer;
+}
+
+.btnDiv{
+    width: 30%;
+    margin-left: 5px;
+}
+
+.loginDiv{
+    display: flex;
+    margin-right: 5px;
+    width: 30%;
+    justify-content: end;
+}
+
+.logoDiv{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+
+}
