@@ -1,29 +1,12 @@
-import { useEffect, useState } from "react";
-import axios from 'axios';
-import { mongooseConnect } from '../../Config/mongoose';
-
-
-export default function Nav(){
-    const [categories, setCategories] = useState([]);
-
-    useEffect(()=>{
-        fetchCategories();
-    },[])
-
-    async function fetchCategories(req,res){
-        //await mongooseConnect();
-
-    }
+import { Link } from "react-router-dom";
+import './Nav.css'
+export default function Nav({show}){
     return(
-        <aside>
-            <ul>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-            </ul>
+        <aside className="container">
+            <nav>
+                <Link className="navLink" to='/'>teste</Link>
+                <Link className="navLink" to='/'>teste</Link>
+            </nav>
         </aside>
-    );
+    )
 }

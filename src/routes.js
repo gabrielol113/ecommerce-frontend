@@ -1,20 +1,16 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-
-import Erro from './pages/Erro';
-import Layout from './Components/Layout';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Erro from "./pages/Erro";
 import Login from './pages/Login';
+import Layout from './Components/Layout'
 
-function RoutesApp(){
+export default function RoutesApp(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={ <Layout/> }/>
-                <Route path='*' element={ <Erro/> }/>
-                <Route path='/login' element={ <Login/> }/>
-            </Routes>          
+                <Route path="/" element={ <Layout/> }/>
+                <Route path="*" element={ <Erro/> }/>
+                <Route path="/login" element={ <Login/> }/>
+            </Routes>
         </BrowserRouter>
     )
 }
-// <Route path='/filme/:id' element={<Filme/>}/>
-// <Route path='/favoritos' element={ <Favoritos/> }/>
-export default RoutesApp;
